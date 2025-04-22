@@ -45,7 +45,7 @@ const ResponsiveCarousel = () => {
                 <p>{item.description}</p>
               </Col>
               <Col md={6} className="carousel-image">
-                <img className="img-fluid" src={item.image} alt={item.title} width={600} />
+                <img className="img-fluid" src={item.image} alt={item.title} width={600} loading="lazy"  />
               </Col>
             </Row>
           </Container>

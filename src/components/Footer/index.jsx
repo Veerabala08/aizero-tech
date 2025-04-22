@@ -3,13 +3,15 @@ import { Button } from 'react-bootstrap'; // Ensure you have react-bootstrap ins
 import './index.css'; // Optional: move styles here or use styled-components
 import { FaFacebookSquare, FaInstagramSquare } from 'react-icons/fa';
 import { BsLinkedin } from "react-icons/bs";
+import { useNavigate } from 'react-router-dom';
 
 const Footer = ({hidebutto=false}) => {
+  const navigate = useNavigate()
   return (
     <>
       {/* Strap Section */}
       <div className="container-fluid strap">
-        <div className="container contact-us d-flex flex-column flex-md-row justify-content-around align-items-center py-4 px-5">
+        <div className="container contact-us d-flex flex-column flex-md-row justify-content-around align-items-center py-4 px-5 gap-3">
           <div className="col-sm-7 col-lg-8 col-xl-5 text-sm-start text-center text-white">
             <h4 className="p-0 m-0 pb-2">
               Ready to take your business to the next level?
@@ -20,7 +22,7 @@ const Footer = ({hidebutto=false}) => {
           </div>
           {hidebutto ? "" 
           : (
-          <Button type="button" className="btn btn-lg px-5 me-md-2 button footerbutton">
+          <Button type="button" className="btn btn-lg px-5 me-md-2 button footerbutton"  onClick={() => navigate('/contact')}>
             Contact Us
           </Button>
         )}
@@ -35,16 +37,18 @@ const Footer = ({hidebutto=false}) => {
             <div className="col-md-3 col-12 mb-3">
               <h5>Main Office</h5>
               <p>
-                84, Street 123, City, Country<br />
-                Phone: +123 456 7890
+                24, IT Layout, Bellandur<br />
+                Bengalore-02, India
               </p>
             </div>
 
             <div className="col-md-3 col-12 mb-3">
               <h5>Branch Office</h5>
               <p>
-                84, Street 123, City, Country<br />
-                Phone: +123 456 7890
+                525 New Jersey-73<br />
+                STE 104
+                MARLTON,<br /> 
+                New Jersey-08053
               </p>
             </div>
 
@@ -62,6 +66,19 @@ const Footer = ({hidebutto=false}) => {
                 </a>
               </div>
             </div>
+
+            <div className="col-md-3 col-12 mb-3">
+              <h5>Email Us</h5>
+              <p>
+                To know more about Aizero services<br />
+                aizero@gmail.com
+              </p>
+            </div>
+
+            <div>
+             <p>© 2025 Aizero All Rights Reserved.</p>
+            </div>
+
           </div>
         </div>
       </footer>

@@ -7,9 +7,9 @@ const statsData = [
   {
     img: Experience,
     alt: '+ YEARS',
-    value: 20,
-    label: 'Experience',
-    suffix: '+ YEARS',
+    value: "100",
+    label: 'Authenticity',
+    suffix: '% Transparent',
   },
   {
     img: Assurance,
@@ -27,10 +27,10 @@ const statsData = [
   },
   {
     img: Completed,
-    alt: '+ PROJECTS',
-    value: 600,
-    label: 'Completed',
-    suffix: '+ PROJECTS',
+    alt: 'Innovation',
+    value: 100,
+    label: 'Unique Solutions',
+    suffix: '% Innovative',
   },
 ];
 

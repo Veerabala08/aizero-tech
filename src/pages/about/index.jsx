@@ -20,6 +20,7 @@ function About() {
                 HeroText="We provide innovative solutions to help businesses thrive in the digital age."
                 buttonHeading="Contact Us"
             />
+            <br></br>
             <Container>
                 <section class="py-5 px-3">
                     <div class="container text-center">
@@ -53,9 +54,8 @@ function About() {
             </p>
             <CoreValues/>
             <br></br>
-            {/* <br></br> */}
-            {/* <Timeline /> */}
-
+            <br></br>
+            <br></br>
         </Container>
     );
 }

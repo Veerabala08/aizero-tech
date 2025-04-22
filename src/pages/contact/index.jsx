@@ -45,9 +45,12 @@ function Contact() {
                                 </Form.Group>
 
                                 <div className="text-center">
-                                    <Button variant="primary" type="submit" className="px-5">
+                                    <button
+                                        type="button"
+                                        className="btn btn-lg px-5 me-md-2 custom-button"
+                                    >
                                         Send Message
-                                    </Button>
+                                    </button>
                                 </div>
                             </Form>
                         </Col>

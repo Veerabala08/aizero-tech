@@ -1,9 +1,11 @@
 // src/components/HeroSection.jsx
 import React from 'react';
 import './index.css'; 
+import { useNavigate } from 'react-router-dom';
 
 
 const HeroSection = ({ HeroImg, HeroHeading, HeroText, buttonHeading }) => {
+  const navigate = useNavigate();
   return (
     <div className="container-fluid px-0 hero-bg " >
       <div className="container col-xxl-8 px-4 py-2">
@@ -31,6 +33,7 @@ const HeroSection = ({ HeroImg, HeroHeading, HeroText, buttonHeading }) => {
                 <button
                   type="button"
                   className="btn btn-lg px-5 me-md-2 custom-button"
+                  onClick={() => navigate('/contact')}
                 >
                   {buttonHeading}
                 </button>
