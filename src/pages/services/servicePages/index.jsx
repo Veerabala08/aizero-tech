@@ -82,12 +82,10 @@ function ServiceDetail() {
                 </Container>
             </div>
 
-            <Container>
+            <Container className='py-5'>
             <p style={{ textAlign: 'justify', padding: "3px" }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{selectedService.description}</p>
             </Container>
-            <br></br>
-            <br></br>
-            <br></br>
+            
         </Container>
     );
 }

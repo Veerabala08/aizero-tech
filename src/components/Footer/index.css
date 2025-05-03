@@ -1,5 +1,5 @@
 .strap {
-  background-color: #0049d3;
+  background-color: #1363c6;
   padding: 20px 0;
   margin-top: auto;
 }
@@ -9,8 +9,8 @@
 }
 
 .footerbutton {
-  background-color: #fe6601 !important;
-  color: white  !important;
+  background-color: white!important;
+  color: black  !important;
 }
 
 .footer h5 {

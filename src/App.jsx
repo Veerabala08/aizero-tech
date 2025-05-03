@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter  as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import HomePage from './pages/home';
 import ServicesPage from './pages/services';
@@ -9,7 +9,7 @@ import ServiceDetail from './pages/services/servicePages';
 
 function App() {
   return (
-    <Router basename="/aizero-tech">
+    <Router>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>

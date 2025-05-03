@@ -1,11 +1,13 @@
 .hero-bg {
-    background: linear-gradient(to top, #ffffff, #1363c6);
+    /* background: linear-gradient(to top, #ffffff, #1363c6); */
+    background-color: #1363c6 !important;
     padding-bottom: 0px;
   }
   
   .custom-button {
-    background-color: #0049d3 !important;
-    color: white !important;
+    background-color: white !important;
+    color: black !important;
+    font-weight: 500;
   }
   
   

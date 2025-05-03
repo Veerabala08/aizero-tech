@@ -47,7 +47,8 @@ function Contact() {
                                 <div className="text-center">
                                     <button
                                         type="button"
-                                        className="btn btn-lg px-5 me-md-2 custom-button"
+                                        style={{ backgroundColor: '#f57c00', color: 'white' }}
+                                        className="btn btn-lg px-5 me-md-2"
                                     >
                                         Send Message
                                     </button>

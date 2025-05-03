@@ -16,8 +16,18 @@ function BasicExample({CardImg, CardText, slug, CardTitle, showButton=false}) {
         <Card.Text>
           {CardText}
         </Card.Text>
-        {!showButton ?   <Button  onClick={handleClick} variant="primary">Learn more</Button> : ""}
+        
       
+      {!showButton ?
+      <button
+      type="button"
+      style={{ backgroundColor: '#f57c00', color: 'white' }}
+      className="btn btn-sm px-3 py-2 me-md-2 fs-7"
+      onClick={handleClick} 
+  >
+      Learn More
+  </button>:
+  ""}
       </Card.Body>
     </Card>
   );
